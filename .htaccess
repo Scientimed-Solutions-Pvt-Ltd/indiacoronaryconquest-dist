@@ -21,7 +21,7 @@ RewriteRule ^ index.html [QSA,L]
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
 
     # Content Security Policy (adjust as needed)
-    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google.com https://www.gstatic.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; frame-src 'self' https://www.google.com https://recaptcha.google.com; connect-src 'self' https://api.indiacoronaryconquest.com https://www.google-analytics.com https://www.googletagmanager.com"
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google.com https://www.gstatic.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; frame-src 'self' https://www.google.com https://recaptcha.google.com https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://api.indiacoronaryconquest.com https://www.google-analytics.com https://www.googletagmanager.com https://sockjs-ap2.pusher.com https://sockjs-ap2-1.pusher.com https://sockjs-ap2-2.pusher.com https://sockjs-ap2-3.pusher.com wss://ws-ap2.pusher.com"
 </IfModule>
 
 # Compress text files
